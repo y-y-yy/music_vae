@@ -13,7 +13,7 @@ python convert.py midi_to_tfr
 ```bash
 python train.py train --config=groovae_4bar --run_dir='groovae_4bar' --mode=train --examples_path='groove.tfrecord' --num_steps=4000
 ```
-4. 평가
+4. 모델 평가
 ```bash
 python train.py evaluate --config=groovae_4bar --run_dir='groovae_4bar' --mode=eval --examples_path='groove.tfrecord' --eval_num_batches=10
 tensorboard --logdir='./groovae_4bar/eval'
